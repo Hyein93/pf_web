@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dosuguan';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/도서관체.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+    style guide(스타일 가이드)
+        h1~h3, Nav a: Georgia, italic
+        body, p, Section a: Arial
+
+        단위: rem, em, px, %
+
+        h1: 50px, lh60px
+        h2: 30px, lh36px
+        h3: 22.5px, h33.75px
+        h3 span: 22.5px, 400, lh33.75px
+        nav a: 20px, lh100px
+        body: 15px, 1.5 -> 150~200% 가독성이 좋다.
+*/
+
+/* font */
+html {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.5 Helvetica, Arial, sans-serif;
+}
+
+nav a {
+    font-family: 'Dosuguan';
+}
+
+h1 {
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 50px;
+    color: #fff
+}
+
+h2 {
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 2.25rem;
+    margin: 0px;
+}
+
+a {
+    color: #444;
+    text-decoration: underline;
+}
+
+nav a {
+    font-size: 2rem;
+    text-decoration: none;
+}
