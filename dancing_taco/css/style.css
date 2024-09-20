@@ -7,10 +7,10 @@
 /* fullpage */
 /* fullpage - 왼쪽 하단에 있는 메뉴 */
 #hana_nav {
-    z-index:9999;
+    z-index: 9999;
     position: fixed;
-    left:0;
-    bottom:0;
+    left: 0;
+    bottom: 0;
 }
 
 /* 푸터에 있는 p의 높이 */
@@ -51,47 +51,56 @@ header {
     border: none;
     margin-bottom: 0;
 }
+
 /* ////////////////////////////////////////////// */
 /* 
     현재 사용한 이미지 크기: 2000 * 1100
     뷰포트 크기에 맞게 이미지 채우기
 */
-.bx-viewport {
+#s1 .bx-viewport {
     height: 100% !important;
 }
 
-.bx-wrapper li {
+#s1 .bx-wrapper li {
     width: 100vw;
     height: 100vh;
 }
 
 /* ////////////////////////////////////////////// */
 
-.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {
+.bx-wrapper .bx-controls-auto,
+.bx-wrapper .bx-pager {
     bottom: 30px;
 }
+
 .bx-wrapper .bx-pager.bx-default-pager a {
     background: #fff;
     margin: 0 18px;
 }
+
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-    transform: scale(2,2);
+    transform: scale(2, 2);
     background: #06D0DA;
 }
+
 .bx-wrapper .bx-controls-direction a {
     width: 40px;
     height: 80px;
 }
+
 .bx-wrapper .bx-prev {
     left: 160px;
     background: url(../assets/prev.png) no-repeat 0px 0px;
 }
+
 .bx-wrapper .bx-next {
     right: 160px;
-    background: url(../assets/next.png) no-repeat 0px 0px;
+    background: url('/dancing_taco/assets/next.png') no-repeat 0px 0px;
 }
+
 /* next 버튼 호버시 사라지는 현상 초기화 */
-.bx-wrapper .bx-next:focus, .bx-wrapper .bx-next:hover {
+.bx-wrapper .bx-next:focus,
+.bx-wrapper .bx-next:hover {
     background-position: 0 0;
 }
 
@@ -99,55 +108,215 @@ header {
 #s1 .slideWrap p {
     z-index: 9999;
     position: absolute;
-    left:50%; top:50%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
 /* 섹션2 */
-#s2 .ibx {display: flex;}
-#s2 .content_l {width: 642px; text-align: center;}
-#s2 .content_l h2{margin-top: 124px;}
-#s2 .content_l p{width: 574px;}
-#s2 img {width: 586px;}
+#s2 .ibx {
+    display: flex;
+}
 
+#s2 .content_l {
+    width: 642px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#s2 .content_l h2 {
+    margin-top: 124px;
+}
+
+.short-underline {
+    display: inline-block;
+    position: relative;
+}
+
+.short-underline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -14px;
+    /* 글자 아래 공간 */
+    width: 50%;
+    /* 글자 길이의 50% */
+    height: 1px;
+    /* 선의 두께 */
+    background-color: black;
+    /* 선의 색상 */
+}
+
+#s2 .content_l p {
+    width: 574px;
+    margin: 0 auto;
+    border: 1px solid lime;
+    text-align: left;
+    margin-bottom: 34px;
+}
+
+#s2 .content_l p:nth-of-type(1) {
+    margin-top: 77px;
+}
+
+
+#s2 .link a {
+    display: inline-block;
+    padding: 14px 94px;
+    background: #D53E24;
+    color: #fff;
+    border-radius: 50px;
+    transition: .1s;
+}
+
+#s2 .link a:hover {
+    background: #AACD06;
+    color: #fff;
+}
+
+#s2 img {
+    width: 586px;
+}
+
+/* 섹션3 */
+#s3 .ibx {
+    text-align: center;
+}
+
+#s3 .wrap {
+    width: 1128px;
+    margin: 0 auto;
+    margin-top: 94px;
+    margin-bottom: 32px;
+    border: 1px solid red;
+    text-align: center; /* 추가 */
+}
+
+#s3 ul {
+    list-style: none;
+    padding: 0;
+}
+
+#s3 .bxslider {
+    text-align: center;
+}
+
+.bx-wrapper {
+    width: 100%;
+    text-align: center; /* 부모 요소에 중앙 정렬 적용 */
+}
+
+#s3 .bx-wrapper .bx-pager.bx-default-pager a {
+    display: none;
+}
+
+#s3 .bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    display: none;
+}
+
+#s3 .bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: none;
+}
+
+#s3 .bx-wrapper .bx-prev {
+    transform: translateY(130%);
+    left: -88px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid red;
+    background: url('/dancing_taco/assets/prev.svg') no-repeat;
+}
+
+#s3 .bx-wrapper .bx-next {
+    transform: translateY(130%);
+    right: -88px;
+    width: 60px;
+    height: 60px;
+    background: url('/dancing_taco/assets/next.svg') no-repeat;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 22%;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+#s3 img {
+    margin-bottom: 20px;
+}
+
+#s3 .link a {
+    display: inline-block;
+    padding: 14px 94px;
+    background: #D53E24;
+    color: #fff;
+    border-radius: 50px;
+    transition: .1s;
+}
+
+#s3 .link a:hover {
+    background: #AACD06;
+    color: #fff;
+}
+
+#s3 p {
+    margin-top: 6px;
+}
 
 /* 섹션4 */
 #s4 {
     background: url(../assets/s4_bg.png) no-repeat -285px 0/cover;
 }
+
 #s4 .ibx {
     display: flex;
     align-items: center;
     height: 100%;
 }
+
 #s4 .cont {
     position: relative;
     width: 560px;
 }
+
 #s4 .cont::after {
     content: "";
-    position: absolute; left:-4px; top:160px;
-    width: 360px; height: 40px;
+    position: absolute;
+    left: -4px;
+    top: 160px;
+    width: 360px;
+    height: 40px;
     background: #5E2BB8;
 }
+
 #s4 h3 {
     z-index: 1;
     position: relative;
     margin: 24px 0 48px 0;
 }
+
 #s4 p:last-of-type {
     margin: 24px 0;
 }
+
 #s4 .link a {
     display: inline-block;
     padding: 16px 24px;
     background: #5E2BB8;
     transition: .1s;
 }
+
 #s4 .link a:hover {
     transform: translateY(-4px);
     background: #4c0cb9;
 }
+
 #s4 .link a:first-child {
     margin-right: 20px;
 }
