@@ -8,11 +8,11 @@ $(function(){
         //menu: '#hana_nav',
         //anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
 
-        sectionsColor: ['#f2f2f2', '#fff', '#fff', '#fff'],
+        sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
         
         // navigation: false(기본값) -> 오른쪽에 있는 인디케이터
         navigation: true,
-        navigationTooltips: ['Home', 'Best Tour', 'Favorite', 'Culture'],
+        navigationTooltips: ['Home', 'Brand', 'Menu', 'Event', 'SNS'],
         //showActiveTooltip: true
     });
 });
