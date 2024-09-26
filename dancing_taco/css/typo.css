@@ -1,34 +1,28 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
+
+@font-face {
+    font-family: 'Cocogoose';
+    src: url('../assets/cocogoose/Cocogoose-Pro-Regular-trial.ttf');
+}
 
 /* 공통 */
 html { font-size: 10px; } 
-body { font-family: "Noto Sans KR", sans-serif; font-size: 1.5rem; color: #1b1b1b; } 
-h2 { font-size: 4.8rem; font-weight: 600; } 
-h3 { font-size: 1.6rem; font-weight: 600; } 
-p {font-weight: 300;}
-span { font-size: 2rem; font-weight: 600; } 
-a {color: #1b1b1b;}
+body { font-family: "Pretendard-Regular", sans-serif; font-size: 1.5rem; color: #1b1b1b; } 
+h2 { font-family: "Cocogoose"}
+h2 { font-size: 3.8rem; font-weight: 400;}
+p { font-size: 1.6rem; font-weight: 400;}
+span { font-size: 1.6rem; font-weight: 400;}
+a { font-size: 1.6rem; color: #121212;}
 
+/* 헤더 */
+header a { font-size: 1.8rem; font-weight: 800; color: #121212;}
 /* 섹션1 */
 #s1 p {font-size: 60px; font-weight: 600; color: #fff; text-shadow: 0 0 5px #111;}
 
-/* 섹션2 */
-#s2>.ibx>p {color: #777;}
-#s2 #tabs>ul a {color: #777;}
-#s2 h3.rank1 { font-size: 4rem; font-weight: 600; } 
+/* 섹션3 */
+#s3 p { font-size: 2.2rem;}
 
-/* 섹션4 */
-#s4 h2 {font-size: 24px; font-weight: 300;}
-/* 
-    text-transform: 영문의 대소문자;
-        값: uppercase: 모두 대문자
-            lowercase: 모두 소문자
-            capitalize: 단어별 첫 글자만 대문자
+/* 섹션5 */
 
-        <h3>upper lower upper lower</h3>
-        <h3>Upper Lower Upper Lower</h3>
-*/
-#s4 h3 {font-size: 64px; font-weight: 700; line-height: 1; text-transform: uppercase;}
-#s4 p:first-of-type {font-size: 24px; font-weight: 300; line-height: 1.2;}
-#s4 a {font-size: 1.8rem; font-weight: 300; color: #ffffff;} 
+#s5 p { font-size: 2.2rem;}

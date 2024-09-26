@@ -5,17 +5,9 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css);
 
 /* fullpage */
-/* fullpage - 왼쪽 하단에 있는 메뉴 */
-#hana_nav {
-    z-index: 9999;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-
 /* 푸터에 있는 p의 높이 */
 .fp-auto-height div {
-    height: 200px;
+    height: 100px;
     color: white;
     background: #000;
 }
@@ -28,20 +20,35 @@
 /* common */
 .ibx {
     width: 1228px;
+    height: 664px;
     margin: 0 auto;
-    border: 1px solid lime;
     margin-top: 100px;
 }
 
 /* header */
 header {
-    z-index: 9999;
+    /* position이 fixed나 absolute이면 width가 콘텐츠 크기 */
     position: fixed;
+    z-index: 9999;
     width: 100%;
-    height: 100px;
-    background: rgba(0, 0, 0, 0.525);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 78px;
+    background: rgba(255, 255, 255, 0.5);
 }
 
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 104px;
+}
+
+.icon li {
+    margin-left: 48px;
+}
 
 /* 섹션1 */
 
@@ -79,8 +86,8 @@ header {
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-    transform: scale(2, 2);
-    background: #06D0DA;
+    transform: scale(1, 1);
+    background: #D53E24;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -90,12 +97,12 @@ header {
 
 .bx-wrapper .bx-prev {
     left: 160px;
-    background: url(../assets/prev.png) no-repeat 0px 0px;
+    background: url('assets/prev.png') no-repeat 0px 0px;
 }
 
 .bx-wrapper .bx-next {
     right: 160px;
-    background: url('/dancing_taco/assets/next.png') no-repeat 0px 0px;
+    background: url('assets/next.png') no-repeat 0px 0px;
 }
 
 /* next 버튼 호버시 사라지는 현상 초기화 */
@@ -149,9 +156,8 @@ header {
 }
 
 #s2 .content_l p {
-    width: 574px;
+    width: 594px;
     margin: 0 auto;
-    border: 1px solid lime;
     text-align: left;
     margin-bottom: 34px;
 }
@@ -160,10 +166,10 @@ header {
     margin-top: 77px;
 }
 
-
 #s2 .link a {
     display: inline-block;
     padding: 14px 94px;
+    margin-top: 24px;
     background: #D53E24;
     color: #fff;
     border-radius: 50px;
@@ -189,8 +195,7 @@ header {
     margin: 0 auto;
     margin-top: 94px;
     margin-bottom: 32px;
-    border: 1px solid red;
-    text-align: center; /* 추가 */
+    text-align: center;
 }
 
 #s3 ul {
@@ -226,8 +231,7 @@ header {
     left: -88px;
     width: 60px;
     height: 60px;
-    border: 1px solid red;
-    background: url('/dancing_taco/assets/prev.svg') no-repeat;
+    background: url('../assets/prev.svg') no-repeat;
 }
 
 #s3 .bx-wrapper .bx-next {
@@ -235,7 +239,7 @@ header {
     right: -88px;
     width: 60px;
     height: 60px;
-    background: url('/dancing_taco/assets/next.svg') no-repeat;
+    background: url('../assets/next.svg') no-repeat;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -270,53 +274,109 @@ header {
 }
 
 /* 섹션4 */
-#s4 {
-    background: url(../assets/s4_bg.png) no-repeat -285px 0/cover;
+#s4 p {
+    margin-top: 58px;
 }
 
-#s4 .ibx {
+
+#s4 .text {
+    display: block;
+    background: #D53E24;
+}
+
+#s4 .text span {
+    display: block;
+    color: #fff;
+}
+
+#s4 .event {
+    position: absolute;
+    margin-left: 34px;
+}
+
+#s4 #tabs {
+    position: relative;
+    display: flex;
+}
+
+#s4 #tabs>ul {
+    text-align: center;
+    margin-top: 248px;
+}
+
+#s4 #tabs>ul>li {
+    width: 260px;
+    margin-left: 34px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    border: 1px solid #D53E24;
+    
+}
+
+#s4 #tabs>div a.main_banner {
+    position:absolute;
+    width: 881px;
+    height: 493px;
+    margin-left: 54px;
+    margin-top: 96px;
+}
+
+#s4 #tabs>div {
+    display: none;
+}
+
+#s4 #tabs>div.on {
+    display: block;
+}
+
+
+/* 섹션5 */
+#s5 .ibx {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
 }
 
-#s4 .cont {
-    position: relative;
-    width: 560px;
+#s5 .l_cont, .r_cont {
+    width: 550px;
+    text-align: center;
 }
 
-#s4 .cont::after {
-    content: "";
-    position: absolute;
-    left: -4px;
-    top: 160px;
-    width: 360px;
-    height: 40px;
-    background: #5E2BB8;
+#s5 .l_cont img {
+    width: 550px;
+    margin-bottom: 8px;
 }
 
-#s4 h3 {
-    z-index: 1;
-    position: relative;
-    margin: 24px 0 48px 0;
+#s5 .inst {
+    display: flex;
 }
 
-#s4 p:last-of-type {
-    margin: 24px 0;
+#s5 li{
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin-left: 8px;
+    margin-bottom: 8px;
 }
 
-#s4 .link a {
-    display: inline-block;
-    padding: 16px 24px;
-    background: #5E2BB8;
-    transition: .1s;
+#s5 .inst img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
 }
 
-#s4 .link a:hover {
-    transform: translateY(-4px);
-    background: #4c0cb9;
+#s5 .inst img:hover{
+    transform: scale(1.2);
 }
 
-#s4 .link a:first-child {
-    margin-right: 20px;
+#s5 .inst img{
+    margin: 0 8px 8px 0;
+}
+
+#s5 p{
+    margin-top: 14px;
 }

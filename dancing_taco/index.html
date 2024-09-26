@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- jQuery.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- fullpage.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <!-- bxSlider.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <!-- fullpage.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
     <!-- user.js -->
     <script src="js/hana_fullpage.js"></script>
     <script src="js/slide.js"></script>
     <script src="js/s3.js"></script>
+    <script src="js/tabs.js"></script>
 
 </head>
 
@@ -23,16 +24,25 @@
     <!-- https://alvarotrigo.com/fullPage/ko/ -->
     <!-- header -->
     <header>
-        헤더
+        <!-- 로고 -->
+        <a href="#"><img src="assets/logo.png" alt="logo">
+        <!-- 내비게이션 -->
+        <nav>
+            <ul>
+                <li><a href="#">댄싱타코</a></li>
+                <li><a href="#s3">메뉴</a></li>
+                <li><a href="#">매장안내</a></li>
+                <li><a href="#s4">뉴스/이벤트</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="icon">
+                <li><a href="#"><img src="assets/user-solid 1.svg" alt="user_ico"></a></li>
+                <li><a href="#"><img src="assets/instagram-brands-solid 1.svg" alt="insta_ico"></a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- nav -->
-    <!-- <ul id="hana_nav">
-        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">홈</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">베스트 여행지</a></li>
-        <li data-menuanchor="thirdPage"><a href="#thirdPage">가장 좋아하는 곳</a></li>
-        <li data-menuanchor="fourthPage"><a href="#fourthPage">하나투어 이야기</a></li>
-    </ul> -->
 
     <!-- section -->
     <div id="wrap">
@@ -41,15 +51,12 @@
                 <ul class="slider">
                     <li>
                         <img src="assets/s1.jpg" alt="슬라이드 이미지1">
-                        <p>언제 어디서나, 모든 순간<br>고객의 곁에서 함께 합니다.</p>
                     </li>
                     <li>
                         <img src="assets/s2.jpg" alt="슬라이드 이미지2">
-                        <p>언제 어디서나, 모든 순간<br>고객의 곁에서 함께 합니다.</p>
                     </li>
                     <li>
                         <img src="assets/s3.jpg" alt="슬라이드 이미지3">
-                        <p>언제 어디서나, 모든 순간<br>고객의 곁에서 함께 합니다.</p>
                     </li>
                 </ul>
             </div>
@@ -60,9 +67,8 @@
                     <div class="short-underline">
                         <h2>BRAND STORY</h2>
                     </div>
-                    <p>댄싱 타코는 한 입만 먹어도 춤추게 되는 특별한 맛을 선사하는 타코 전문 레스토랑입니다. "Taco, Loco, Disco"라는 슬로건에 맞춰, 다채로운 타코와 라틴 감성을
-                        가득 담은 분위기를 제공합니다.</p>
-                    <p>신선한 재료와 정성으로 만든 메뉴는 입안에서 축제가 펼쳐지듯 즐거운 시간을 보장합니다.활기찬 분위기 속에서 여러분의 미각을 춤추게 할 순간을 즐겨보세요!</p>
+                    <p>댄싱 타코는 한 입만 먹어도 춤추게 되는 특별한 맛을 선사하는 타코 전문 레스토랑입니다. "Taco, Loco, Disco"라는 슬로건에 맞춰, 다채로운 타코와 라틴 감성을 가득 담은 분위기를 제공합니다.</p>
+                    <p>신선한 재료와 정성으로 만든 메뉴는 입안에서 축제가 펼쳐지듯 즐거운 시간을 보장합니다. 활기찬 분위기 속에서 여러분의 미각을 춤추게 할 순간을 즐겨보세요!</p>
                     <div class="link">
                         <a href="#">VIEW ALL CONTENTS</a>
                     </div>
@@ -76,31 +82,33 @@
                 <div class="wrap">
                     <ul class="bxslider">
                         <li><a href="#"><img src="./assets/menu1.png" alt="부리또">
-                                <strong>부리또</strong>
-                                <p>Burrito</p>
+                                <p>부리또</p>
+                                <span>Burrito</span>
                             </a>
                         </li>
-                        <li><a href="#"><img src="./assets/menu2.png" alt="타코"><strong>타코</strong>
-                                <p>Taco</p>
+                        <li><a href="#"><img src="./assets/menu2.png" alt="타코">
+                                <p>타코</p>
+                                <span>Taco</span>
                             </a>
                         </li>
                         <li><a href="#"><img src="./assets/menu3.png" alt="퀘사디아">
-                                <strong>퀘사디아</strong>
-                                <p>Quesadilla</p>
+                                <p>퀘사디아</p>
+                                <span>Quesadilla</span>
                             </a>
                         </li>
-                        <li><a href="#"><img src="./assets/menu1.png" alt="부리또"><strong>부리또</strong>
-                                <p>Burrito</p>
+                        <li><a href="#"><img src="./assets/menu1.png" alt="부리또">
+                                <p>부리또</p>
+                                <span>Burrito</span>
                             </a>
-
                         </li>
-                        <li><a href="#"><img src="./assets/menu2.png" alt="타코"><strong>타코</strong>
-                                <p>Taco</p>
+                        <li><a href="#"><img src="./assets/menu2.png" alt="타코">
+                                <p>타코</p>
+                                <span>Taco</span>
                             </a>
-
                         </li>
-                        <li><a href="#"><img src="./assets/menu3.png" alt="퀘사디아"><strong>퀘사디아</strong>
-                                <p>Quesadilla</p>
+                        <li><a href="#"><img src="./assets/menu3.png" alt="퀘사디아">
+                                <p>퀘사디아</p>
+                                <span>Quesadilla</span>
                             </a>
                         </li>
                     </ul>
@@ -112,29 +120,73 @@
         </section>
         <section id="s4" class="section">
             <div class="ibx">
-                <div class="cont">
-                    <h2>하나투어 이야기</h2>
-                    <h3>hana tour<br> &amp; culture</h3>
-                    <p>여행을 넘어, 즐기고 먹고 머무는 곳까지<br> 여행을 더 잘 만들기 위해,<br> 더 큰 행복을 위해 우리는 문화를 만듭니다.</p>
-                    <p>익숙하지만 색다른 이야기를 낯설지만 공감가는 이야기를<br> 모든 이들의 여행의 꿈을 실현해드립니다.</p>
-                    <div class="link">
-                        <a href="#">브랜드 소개</a>
-                        <a href="#">여행문의</a>
+                <div class="event">
+                    <h2>EVENT</h2>
+                    <p>댄싱타코의 다양한 이벤트를<br>
+                        지금 확인하세요!</p>
+                </div>
+                <!-- 탭 -->
+                <div id="tabs">
+                    <ul>
+                        <li class="text"><a href="#"><span>타코 프라이데이 BEER 1+1🍻</span></a></li>
+                        <li><a href="#"><span>#인증샷 리뷰 이벤트📷</span></a></li>
+                        <li><a href="#"><span>댄타 콜라보레이션🌮</span></a></li>
+                        <li><a href="#"><span>스페셜 런치 세트 런칭❤️</span></a></li>
+                    </ul>
+                    <div id="tab1" class="on">
+                        <ul>
+                            <li>
+                                <a href="#" class="main_banner"><img src="assets/enevt1.jpg" alt="이벤트1"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab2">
+                        <ul>
+                            <li>
+                                <a href="#" class="main_banner"><img src="assets/temp.png" alt="이벤트2"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab3">
+                        <ul>
+                            <li>
+                                <a href="#" class="main_banner"><img src="assets/temp.png" alt="이벤트3"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab4">
+                        <ul>
+                            <li>
+                                <a href="#" class="main_banner"><img src="assets/temp.png" alt="이벤트4"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </div><!-- //.inner -->
         </section>
         <section id="s5" class="section">
             <div class="ibx">
-                <div class="cont">
-                    <h2>하나투어 이야기</h2>
-                    <h3>hana tour<br> &amp; culture</h3>
-                    <p>여행을 넘어, 즐기고 먹고 머무는 곳까지<br> 여행을 더 잘 만들기 위해,<br> 더 큰 행복을 위해 우리는 문화를 만듭니다.</p>
-                    <p>익숙하지만 색다른 이야기를 낯설지만 공감가는 이야기를<br> 모든 이들의 여행의 꿈을 실현해드립니다.</p>
-                    <div class="link">
-                        <a href="#">브랜드 소개</a>
-                        <a href="#">여행문의</a>
-                    </div>
+                <div class="l_cont">
+                    <a href="#"> <img src="assets/poster_2.png" alt="포스터2"></a>
+                    <a href="#"><p>Youtube PLAY LIST🎵</p></a>
+                </div>
+                <div class="r_cont">
+                    <ul class="inst">
+                        <li><a href=""><img src="assets/ins_9.png"alt="인스타 피드9"></a></li>
+                        <li><a href=""><img src="assets/ins_8.png"alt="인스타 피드8"></a></li>
+                        <li><a href=""><img src="assets/ins_7.png"alt="인스타 피드7"></a></li>
+                    </ul>
+                    <ul class="inst">
+                        <li><a href=""><img src="assets/ins_6.png"alt="인스타 피드6"></a></li>
+                        <li><a href=""><img src="assets/ins_5.png"alt="인스타 피드5"></a></li>
+                        <li><a href=""><img src="assets/ins_4.png"alt="인스타 피드4"></a></li>
+                    </ul>
+                    <ul class="inst">
+                        <li><a href=""><img src="assets/ins_3.png"alt="인스타 피드3"></a></li>
+                        <li><a href=""><img src="assets/ins_2.png"alt="인스타 피드2"></a></li>
+                        <li><a href=""><img src="assets/ins_1.png"alt="인스타 피드1"></a></li>
+                    </ul>
+                    <a href="#"><p>@dancingtaco💚</p></a>
                 </div>
             </div>
         </section>
