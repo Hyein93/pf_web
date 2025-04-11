@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section3 {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #fff;
+  }
+
+.section3 .container {
+    width: 840px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* 타이틀 */
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* 그리드 박스 */
+  .archive-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 205px); /* 정확한 4열 구성 */
+    column-gap: 6px;  /* 카드 간 가로 간격 */
+    row-gap: 36px;    /* 카드 간 세로 간격 */
+    justify-content: start; /* 왼쪽 정렬 */
+  }
+  
+  /* 카드 스타일 */
+  .card {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .thumbnail {
+    width: 205px;
+    height: 205px;
+    overflow: hidden;
+    border-radius: 5px; /* 프루티거 에어로 포인트 */
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* 텍스트와 화살표 간격 */
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  /* 호버 효과 */
+  .card:hover .thumbnail img {
+    transform: scale(1.1);
+  }
+  
+  .card:hover .arrow {
+    transform: translateX(4px);
+  }
+  
