@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section4 {
+    position: relative;
+    height: 425px; /* 이미지 비율 고려 */
+    background-image: url('assets/parallax.jpg'); /* 실제 이미지 경로로 변경 */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 40px 0;
+  }
