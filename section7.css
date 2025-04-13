@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section7 {
+    position: relative;
+    width: 100%;
+    height: 813px;
+    background: url('assets/duri.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin: 40px 0;
+  }
+  
+  .text-wrap {
+    position: relative;
+    width: 100%;
+    text-align: center; /* 👉 가운데 정렬 */
+  }
+  
+  .stroke-text,
+  .gradient-text {
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    transform: translateX(-50%); /* 👉 가운데 정렬용 */
+    font-size: 124px;
+    font-weight: 900;
+    font-family: sans-serif;
+    white-space: nowrap;
+  }
+  
+  /* 스트로크 텍스트 */
+  .stroke-text {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 6px white;
+    z-index: 0;
+  }
+  
+  /* 그라데이션 텍스트 */
+  .gradient-text {
+    /* 그라데이션 글자 표현 */
+    background: #afafaf;
+    /* 그라데이션 진행 안될시 보일 색상 */
+    background: linear-gradient(to right, #ff6f8e, #daff82, #ee97ff);
+    background-clip: text;
+    /* border-box, padding-box, content-box, text 4가지
+    border-box
+    외곽선의 비어 있는 부분까지 배경을 칠한다. (기본값)
+    padding-box
+    외곽선 부분은 칠하지 않지만 안쪽 여백까지는 배경을 칠한다.
+    content-box
+    안쪽 여백 부분도 칠하지 않고 오로지 내용이 들어갈 부분만 배경을 칠한다.
+    text
+    텍스트를 따라서 배경을 칠한다.
+     */
+    color: transparent;
+    white-space: nowrap
+  }
+  
+  
+  
+  .dog-caption {
+    color: rgb(0, 0, 0);
+    font-family: 'Pretendard', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 64px;
+    -webkit-text-stroke: 2px white;
+    font-weight: 800;
+  }
