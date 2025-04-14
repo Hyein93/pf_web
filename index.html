@@ -1,166 +1,200 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="section1.css">
-    <link rel="stylesheet" href="section2.css">
-    <link rel="stylesheet" href="section3.css">
-    <link rel="stylesheet" href="section4.css">
-    <link rel="stylesheet" href="section5.css">
-    <link rel="stylesheet" href="section6.css">
-    <link rel="stylesheet" href="section7.css">
-    <link rel="stylesheet" href="section8.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="section1.css">
+  <link rel="stylesheet" href="section2.css">
+  <link rel="stylesheet" href="section3.css">
+  <link rel="stylesheet" href="section4.css">
+  <link rel="stylesheet" href="section5.css">
+  <link rel="stylesheet" href="section6.css">
+  <link rel="stylesheet" href="section7.css">
+  <link rel="stylesheet" href="section8.css">
+  <link rel="stylesheet" href="section9.css">
+  <link rel="stylesheet" href="section10.css">
 </head>
+
 <body>
-    <section class="section1">
-        <div class="image-wrapper">
-          <div class="image-box left">
-            <img src="assets/Left Visual.jpg" alt="Left Visual" />
+  <header class="header">
+    <div class="header-top">
+      <div class="marquee">
+        <div>
+          <span>🌐Love Makes the world Go 'Round </span>
+          <span>🌐Love Makes the world Go 'Round </span>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li data-tab="home" class="nav-item active">🏠 Home</li>
+        <li data-tab="about" class="nav-item">👩‍💻 About</li>
+        <li data-tab="archive" class="nav-item">📁 Archive</li>
+        <li data-tab="project" class="nav-item">🧪 Project</li>
+        <li data-tab="sandbox" class="nav-item">🚧 Sandbox</li>
+        <li data-tab="log" class="nav-item">📝 Log</li>
+        <li data-tab="ping" class="nav-item">📡 Ping</li>
+      </ul>
+      <p id="section-desc">Start here to get a glimpse of my style, vibe, and what I create.</p>
+    </nav>
+  </header>
+  <section id="home">
+    <div class="section1">
+      <div class="image-wrapper">
+        <div class="image-box left">
+          <img src="assets/Left Visual.jpg" alt="Left Visual" />
+        </div>
+        <div class="image-box right">
+          <img src="assets/Right Visual.jpg" alt="Right Visual" />
+        </div>
+      </div>
+      <div class="text-box">
+        <h2>Hey there!</h2>
+        <p>
+          I’m Hyein — a designer who enjoys crafting curious & clean visuals.<br />
+          From playful screen graphics to real-world product and banner designs,<br />
+          I combine personal taste with practical experience.<br />
+          Scroll down and get a feel for what I do!
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="section2">
+      <div class="container">
+        <div class="left-box">
+          <img src="assets/aboutme.jpg" alt="일러스트" />
+          <p class="desc">Simple design, strong logic.<br />I create with both.</p>
+        </div>
+        <div class="right-box">
+          <div class="skill">
+            <img src="assets/ai.svg" alt="Illustrator">
+            <div class="text">
+              <strong>Illustrator</strong>
+              <p>아이콘, 편집 디자인 작업에 능숙해요.</p>
+            </div>
           </div>
-          <div class="image-box right">
-            <img src="assets/Right Visual.jpg" alt="Right Visual" />
+          <div class="skill">
+            <img src="assets/ps.svg" alt="Photoshop">
+            <div class="text">
+              <strong>Photoshop</strong>
+              <p>이미지 리터칭 및 합성에 강해요.</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="assets/Figma.svg" alt="Figma">
+            <div class="text">
+              <strong>Figma</strong>
+              <p>프로토타이핑과 편디자인 제작에 사용해요.</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="assets/html.svg" alt="HTML">
+            <div class="text">
+              <strong>HTML</strong>
+              <p>웹 표준을 지켜 정보 구조를 깔끔하게 설계합니다.</p>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="assets/css.svg" alt="CSS">
+            <div class="text">
+              <strong>CSS</strong>
+              <p>브랜드 무드를 담은 감각적인 스타일을 구현합니다.</p>
+            </div>
           </div>
         </div>
-        <div class="text-box">
-          <h2>Hey there!</h2>
-          <p>
-            I’m Hyein — a designer who enjoys crafting curious & clean visuals.<br />
-            From playful screen graphics to real-world product and banner designs,<br />
-            I combine personal taste with practical experience.<br />
-            Scroll down and get a feel for what I do!
-          </p>
-        </div>
-      </section>
-      <section class="section2">
-        <div class="container">
-          <div class="left-box">
-            <img src="assets/aboutme.jpg" alt="일러스트" />
-            <p class="desc">Simple design, strong logic.<br />I create with both.</p>
-          </div>
-          <div class="right-box">
-            <div class="skill">
-              <img src="assets/ai.svg" alt="Illustrator">
-              <div class="text">
-                <strong>Illustrator</strong>
-                <p>아이콘, 편집 디자인 작업에 능숙해요.</p>
-              </div>
-            </div>
-            <div class="skill">
-              <img src="assets/ps.svg" alt="Photoshop">
-              <div class="text">
-                <strong>Photoshop</strong>
-                <p>이미지 리터칭 및 합성에 강해요.</p>
-              </div>
-            </div>
-            <div class="skill">
-              <img src="assets/Figma.svg" alt="Figma">
-              <div class="text">
-                <strong>Figma</strong>
-                <p>프로토타이핑과 편디자인 제작에 사용해요.</p>
-              </div>
-            </div>
-            <div class="skill">
-              <img src="assets/html.svg" alt="HTML">
-              <div class="text">
-                <strong>HTML</strong>
-                <p>웹 표준을 지켜 정보 구조를 깔끔하게 설계합니다.</p>
-              </div>
-            </div>
-            <div class="skill">
-              <img src="assets/css.svg" alt="CSS">
-              <div class="text">
-                <strong>CSS</strong>
-                <p>브랜드 무드를 담은 감각적인 스타일을 구현합니다.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section3">
-        <div class="container">
-            <h2 class="section-title">📁 Archive: 완성된 작업물</h2>
+      </div>
+    </div>
+  </section>
+  <section id="archive">
+    <div class="section3">
+      <div class="container">
+        <h2 class="section-title">📁 Archive: 완성된 작업물</h2>
         <div class="archive-grid">
           <a href="#" class="card">
             <div class="thumbnail">
               <img src="assets/archive1.jpg" alt="디자인 도식화">
             </div>
             <div class="title-wrap">
-                <span class="title">디자인 도식화</span>
-                <span class="arrow">→</span>
-              </div>
-            
+              <span class="title">디자인 도식화</span>
+              <span class="arrow">→</span>
+            </div>
+
           </a>
-      
+
           <a href="#" class="card">
             <div class="thumbnail">
               <img src="assets/archive2.jpg" alt="작업 지시서">
             </div>
             <div class="title-wrap">
-                <span class="title">작업 지시서</span>
-                <span class="arrow">→</span>
-              </div>
+              <span class="title">작업 지시서</span>
+              <span class="arrow">→</span>
+            </div>
           </a>
-      
+
           <a href="#" class="card">
             <div class="thumbnail">
               <img src="assets/archive3.jpg" alt="배너 디자인">
             </div>
             <div class="title-wrap">
-                <span class="title">배너 디자인</span>
-                <span class="arrow">→</span>
-              </div>
+              <span class="title">배너 디자인</span>
+              <span class="arrow">→</span>
+            </div>
           </a>
-      
+
           <a href="#" class="card">
             <div class="thumbnail">
               <img src="assets/archive4.jpg" alt="그래픽 디자인">
             </div>
             <div class="title-wrap">
-                <span class="title">그래픽 디자인</span>
-                <span class="arrow">→</span>
-              </div>
+              <span class="title">그래픽 디자인</span>
+              <span class="arrow">→</span>
+            </div>
           </a>
-      
+
           <a href="#" class="card">
             <div class="thumbnail">
               <img src="assets/archive5.jpg" alt="디자인 스킬">
             </div>
             <div class="title-wrap">
-                <span class="title">디자인 스킬</span>
-                <span class="arrow">→</span>
-              </div>
+              <span class="title">디자인 스킬</span>
+              <span class="arrow">→</span>
+            </div>
           </a>
-      
+
           <a href="#" class="card">
             <div class="thumbnail">
               <img src="assets/archive6.jpg" alt="리소스 실험실">
             </div>
             <div class="title-wrap">
-                <span class="title">리소스 실험실</span>
-                <span class="arrow">→</span>
-              </div>
+              <span class="title">리소스 실험실</span>
+              <span class="arrow">→</span>
+            </div>
           </a>
-      
+
           <a href="#" class="card">
             <div class="thumbnail">
               <img src="assets/archive1.jpg" alt="아카이브 북">
             </div>
             <div class="title-wrap">
-                <span class="title">아카이브 북</span>
-                <span class="arrow">→</span>
-              </div>
+              <span class="title">아카이브 북</span>
+              <span class="arrow">→</span>
+            </div>
           </a>
         </div>
+      </div>
     </div>
-      </section>
-      <section class="section4">
-        <div class="parallax-content">
-        </div>
-      </section>
-      <section class="section5">
-        <div class="container">
+  </section>
+  <section class="section4">
+    <div class="parallax-content">
+    </div>
+  </section>
+  <section id="project">
+    <div class="section5">
+      <div class="container">
         <h2 class="section-title">🖋️ Project: 개인 프로젝트 기록</h2>
         <div class="project-grid">
           <a href="#" class="project-item">
@@ -169,7 +203,8 @@
             </div>
             <h3>Lorem ipsum</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Donec enim odio id vulputate laoreet egestas blandit consequat tristique. Nunc neque iaculis sed sit. Tortor ac molestie placerat laoreet.
+              Lorem ipsum dolor sit amet consectetur. Donec enim odio id vulputate laoreet egestas blandit consequat
+              tristique. Nunc neque iaculis sed sit. Tortor ac molestie placerat laoreet.
             </p>
           </a>
           <a href="#" class="project-item">
@@ -178,7 +213,8 @@
             </div>
             <h3>Lorem ipsum</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Donec enim odio id vulputate laoreet egestas blandit consequat tristique. Nunc neque iaculis sed sit. Tortor ac molestie placerat laoreet.
+              Lorem ipsum dolor sit amet consectetur. Donec enim odio id vulputate laoreet egestas blandit consequat
+              tristique. Nunc neque iaculis sed sit. Tortor ac molestie placerat laoreet.
             </p>
           </a>
           <a href="#" class="project-item">
@@ -187,7 +223,8 @@
             </div>
             <h3>Lorem ipsum</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Donec enim odio id vulputate laoreet egestas blandit consequat tristique. Nunc neque iaculis sed sit. Tortor ac molestie placerat laoreet.
+              Lorem ipsum dolor sit amet consectetur. Donec enim odio id vulputate laoreet egestas blandit consequat
+              tristique. Nunc neque iaculis sed sit. Tortor ac molestie placerat laoreet.
             </p>
           </a>
           <a href="#" class="project-item">
@@ -196,23 +233,26 @@
             </div>
             <h3>Lorem ipsumo</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Donec enim odio id vulputate laoreet egestas blandit consequat tristique. Nunc neque iaculis sed sit. Tortor ac molestie placerat laoreet.
+              Lorem ipsum dolor sit amet consectetur. Donec enim odio id vulputate laoreet egestas blandit consequat
+              tristique. Nunc neque iaculis sed sit. Tortor ac molestie placerat laoreet.
             </p>
           </a>
         </div>
+      </div>
     </div>
-      </section>
-      <section class="section6">
-        <div class="section-title-box">
-          <h2 class="section-title">🚧 Sandbox</h2>
-        </div>
-          <div class="container">
+  </section>
+  <section id="sandbox">
+    <div class="section6">
+      <div class="section-title-box">
+        <h2 class="section-title">🚧 Sandbox</h2>
+      </div>
+      <div class="container">
         <div class="left-box">
-            <div class="text-box center">
-                <h1>그냥 틀어두세요.</h1>
-                <p>취향은 조용히 스며듭니다.</p>
-              </div>
-      
+          <div class="text-box center">
+            <h1>그냥 틀어두세요.</h1>
+            <p>취향은 조용히 스며듭니다.</p>
+          </div>
+
           <div class="thumb-group">
             <a href="https://link1.com" target="_blank" class="thumb">
               <img src="assets/music1.jpg" alt="썸네일1">
@@ -224,17 +264,17 @@
             </a>
           </div>
         </div>
-      
+
         <div class="right-box">
           <div class="hero-image">
             <img src="assets/music.jpg" alt="메인 이미지">
             <a href="https://open.spotify.com/playlist/yourplaylistid" class="play-btn" target="_blank">
-                <img src="assets/spotify2.ico" alt="버튼">
+              <img src="assets/spotify2.ico" alt="버튼">
             </a>
           </div>
         </div>
-    </div>
-    <div class="bottom-thumbs">
+      </div>
+      <div class="bottom-thumbs">
         <div class="container">
           <!-- 썸네일 1 -->
           <a href="#popup1">
@@ -262,7 +302,7 @@
           </a>
         </div>
       </div>
-      
+
       <!-- 팝업들 (각각 대응) -->
       <div id="popup1" class="popup"><a href="#" class="close-btn">✕</a><img src="assets/Sandbox1.jpg"></div>
       <div id="popup2" class="popup"><a href="#" class="close-btn">✕</a><img src="assets/Sandbox2.jpg"></div>
@@ -270,18 +310,20 @@
       <div id="popup4" class="popup"><a href="#" class="close-btn">✕</a><img src="assets/Sandbox4.jpg"></div>
       <div id="popup5" class="popup"><a href="#" class="close-btn">✕</a><img src="assets/Sandbox5.jpg"></div>
       <div id="popup6" class="popup"><a href="#" class="close-btn">✕</a><img src="assets/Sandbox6.jpg"></div>
-      </section>
-      <section class="section7">
-        <div class="text-wrap">
-            <span class="stroke-text">★광고★</span>
-            <span class="gradient-text">★광고★</span>
-          </div>
-        <div class="dog-caption">
-          <p><strong>김두리(퍼그/내 강아지)</strong><br>귀엽죠? 자랑입니다.</p>
-        </div>
-      </section>
-      <section class="section8">
-        <div class="container">
+    </div>
+  </section>
+  <section class="section7">
+    <div class="text-wrap">
+      <span class="stroke-text">★광고★</span>
+      <span class="gradient-text">★광고★</span>
+    </div>
+    <div class="dog-caption">
+      <p><strong>김두리(퍼그/내 강아지)</strong><br>귀엽죠? 자랑입니다.</p>
+    </div>
+  </section>
+  <section id="log">
+    <div class="section8">
+      <div class="container">
         <h2 class="section-title">📝 Log</h2>
         <a href="/log-write" class="log-box">
           <div class="log-img-box">
@@ -295,7 +337,7 @@
             오늘도 한 대, 내일도 한 대. 끝까지 가보자고.
           </p>
         </a>
-      
+
         <a href="/log-write" class="log-box">
           <div class="log-img-box">
             <img src="assets/log2.jpg" alt="일상 로그" />
@@ -303,8 +345,101 @@
           <h3>🎈일상 로그🎈</h3>
           <p>뭐하고 살아가는지, 어떻게 살아남고있는지</p>
         </a>
+      </div>
     </div>
-      </section>
-      
+  </section>
+  <section id="ping">
+    <div class="section9">
+      <div class="container">
+        <h2 class="section-title">📡 Ping</h2>
+        <div class="accordion">
+          <!-- Resume -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span class="accordion-title">Resume</span>
+              <span class="arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <a href="downloads/resume_1.pdf" download>download_1</a>
+              <a href="downloads/resume_2.pdf" download>download_2</a>
+              <a href="downloads/resume_3.pdf" download>download_3</a>
+            </div>
+          </div>
+
+          <!-- Work Experience -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span class="accordion-title">Work Experience</span>
+              <span class="arrow">▼</span>
+            </div>
+            <div class="accordion-content">-
+              <a href="downloads/work_1.pdf" download>download_1</a>
+              <a href="downloads/work_2.pdf" download>download_2</a>
+            </div>
+          </div>
+
+          <!-- Portfolio -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <span class="accordion-title">Portfolio</span>
+              <span class="arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <a href="downloads/portfolio_1.pdf" download>download_1</a>
+              <a href="downloads/portfolio_2.pdf" download>download_2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script9.js"></script>
+    </div>
+    <div class="section10">
+      <div class="container">
+        <!-- Column 1: 좌측 텍스트 -->
+        <div class="section10-column">
+          <h3>질서 있는 구조와 여백</h3>
+          <p>
+            제가 디자인에서 가장 중요하게 여기는 가치는 전달력입니다.<br />
+            사용자의 시선이 어디로 흐를지, 어떤 정보가 먼저 인식되어야 할지를 항상 고민하며,<br />
+            구조적인 흐름과 여백의 리듬을 통해 정제된 화면을 완성합니다.<br /><br />
+            복잡함을 덜어내고, 선명한 구조와 여백의 조화를 중심에 두는 디자인을 추구합니다.<br />
+            깨끗한 색감과 균형 잡힌 배치, 군더더기 없는 구성은 사용자가 콘텐츠에 온전히 집중할 수 있도록 돕습니다.<br /><br />
+
+            맑고 밝은 무드 속에서도 단정하고 정제된 인상을 유지하는 것.<br />
+            그 안에서 메시지를 더욱 또렷하게 전달하고, 눈에 편안한 흐름을 만들어내는 것이 제가 지향하는 디자인입니다.<br />그래서 언제나 작업의 마지막엔 시선을 한 번 더 점검하며,<br />‘보기
+            좋고, 보기 쉬운 디자인’을 위해 노력합니다.
+          </p>
+        </div>
+
+        <!-- Column 2: 가운데 텍스트 -->
+        <div class="section10-column">
+          <h3>경험을 통한 성장</h3>
+          <p>
+            섬유의상코디 전공으로 디자인의 기본기를 다졌고, 학업을 통해 Adobe Illustrator와 Photoshop을 능숙하게 다루게 되었습니다.<br />
+            특히 도식화 작업에 익숙해지며 실무에 바로 적용할 수 있는 디자인 감각을 키워왔습니다.<br /><br />
+
+            졸업 후에는 잡화 디자인 분야에서 다양한 브랜드와 함께 실무 경험을 쌓았습니다.<br />
+            제품 도식화와 작업지시서 작성은 물론, 레퍼런스 서치와 샘플 개발을 위한 커뮤니케이션까지 폭넓게 맡아보며 디자인 프로세스를 자연스럽게 체득했습니다.<br /><br />
+
+            또한 상세페이지, 온라인 배너, SNS 콘텐츠 등 디지털 기반의 시각 디자인도 다수 경험하며 브랜드의 시선을 디자인으로 풀어내는 작업에도 익숙해졌습니다.<br /><br />
+
+            업무 흐름을 빠르게 파악하고, 그 안에서 필요한 역할을 유연하게 채워가는 편입니다.<br />
+            섬세한 감각과 빠른 적응력을 바탕으로 팀 안에서 자연스럽게 녹아들며, 매번 새로운 시도를 고민하는 디자이너로 성장 중입니다.
+          </p>
+        </div>
+
+        <!-- Column 3: Contact -->
+        <div class="section10-column contact">
+          <h3>Contact</h3>
+          <p>📞 010-0000-0000</p>
+          <p>📧 email@example.com</p>
+          <p>📍 Gyeonggi, South Korea</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+
 </body>
+
 </html>
