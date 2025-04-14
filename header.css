@@ -1,17 +1,22 @@
 @charset "utf-8";
-
-/* 헤더 상단 고정 */
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0px;
+  padding: 0;
+}
+/* 헤더 상단 고정 */
 
 .header {
   position: fixed;
-  top: 0;
+  margin-top: -120px;
   width: 100%;
   background: white;
-  z-index: 1000;
+  z-index: 999;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -113,5 +118,5 @@ border-bottom: none;
 }
 
 [id] {
-  scroll-margin-top: 110px;
+  scroll-margin-top: 100px;
 }
